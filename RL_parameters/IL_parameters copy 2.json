@@ -1,0 +1,32 @@
+{
+
+
+
+        "Ant": {
+            "scoring_model_pre_iters": 50
+
+        },
+
+        "HalfCheetah": {
+            "scoring_model_pre_iters": 50
+
+        },
+
+        "Hopper": {
+            "scoring_model_pre_iters": 150
+        },
+
+        "Swimmer": {
+            "scoring_model_pre_iters": 140
+
+        },
+
+        "Walker2d": {
+            "scoring_model_pre_iters": 100
+
+        }
+
+
+
+
+}

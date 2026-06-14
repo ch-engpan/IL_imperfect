@@ -1,0 +1,27 @@
+{
+    
+    "Lift": {
+        "state_keys": "object/robot0_eef_pos/robot0_eef_quat/robot0_gripper_qpos",
+        "mask_keys":"better_operator_1/better_operator_2/okay_operator_1/okay_operator_2/worse_operator_1/worse_operator_2"
+    },
+
+
+    "PickPlaceCan": {
+        "state_keys": "object/robot0_eef_pos/robot0_eef_quat/robot0_gripper_qpos",
+        "mask_keys":"better_operator_1/better_operator_2/okay_operator_1/okay_operator_2/worse_operator_1/worse_operator_2"
+    },
+
+
+    "NutAssemblySquare": {
+        "state_keys": "object/robot0_eef_pos/robot0_eef_quat/robot0_gripper_qpos",
+        "mask_keys":"better_operator_1/better_operator_2/okay_operator_1/okay_operator_2/worse_operator_1/worse_operator_2"
+    },
+
+
+    "TwoArmTransport": {
+        "state_keys": "object/robot0_eef_pos/robot0_eef_quat/robot0_gripper_qpos/robot1_eef_pos/robot1_eef_quat/robot1_gripper_qpos",
+        "mask_keys": "better/okay/worse"
+    }
+
+
+}

@@ -1,0 +1,67 @@
+{
+
+        "Ant": {
+            "v_state": [13,15]
+        },
+
+        "HalfCheetah": {
+            "policy": "MlpPolicy",
+            "batch_size":128,
+            "cg_damping":0.1,
+            "cg_max_steps":25,
+            "gae_lambda":0.95,
+            "gamma":0.99,
+            "learning_rate":0.001,
+            "n_critic_updates":20,
+            "n_steps":1024,
+            "normalize_advantage":"True",
+            "sub_sampling_factor":1,
+            "target_kl": 0.04
+        },
+
+        "Hopper": {
+            "policy": "MlpPolicy",
+            "batch_size":128,
+            "cg_damping":0.1,
+            "cg_max_steps":25,
+            "gae_lambda":0.95,
+            "gamma":0.99,
+            "learning_rate":0.001,
+            "n_critic_updates":20,
+            "n_steps":1024,
+            "normalize_advantage":"True",
+            "sub_sampling_factor":1,
+            "target_kl": 0.01
+        },
+
+        "Swimmer": {
+            "policy": "MlpPolicy",
+            "batch_size":128,
+            "cg_damping":0.1,
+            "cg_max_steps":25,
+            "gae_lambda":0.95,
+            "gamma":0.9999,
+            "learning_rate":0.001,
+            "n_critic_updates":20,
+            "n_steps":1024,
+            "normalize_advantage":"True",
+            "sub_sampling_factor":1,
+            "target_kl": 0.01
+        },
+
+        "Walker2d": {
+            "policy": "MlpPolicy",
+            "batch_size":128,
+            "cg_damping":0.1,
+            "cg_max_steps":25,
+            "gae_lambda":0.95,
+            "gamma":0.99,
+            "learning_rate":0.001,
+            "n_critic_updates":20,
+            "n_steps":1024,
+            "normalize_advantage":"True",
+            "sub_sampling_factor":1,
+            "target_kl": 0.01
+        }
+
+}
