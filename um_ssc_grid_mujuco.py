@@ -13,6 +13,12 @@ import os
 
 
 
+
+def categorical_cross_entropy_from_probs(probabilities, targets, eps=1e-8):
+    """Cross-entropy for normalized probabilities and one-hot or soft targets."""
+    log_probabilities = torch.log(probabilities.clamp_min(eps))
+    return -(targets * log_probabilities).sum(dim=-1).mean()
+
 class Scoring_model_net(nn.Module):
     def __init__(self, priors_class, Pi, Pi_test, input_dim_s, input_dim_a,):
         super(Scoring_model_net, self).__init__()
@@ -561,8 +567,7 @@ class Scoring_model():
         self.device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
         print("device: ", self.device)
         # self.loss_func = torch.nn.MSELoss()
-        self.loss_func = torch.nn.CrossEntropyLoss()
-        self.loss_func.to(self.device)
+        self.loss_func = categorical_cross_entropy_from_probs
         self.input_scaler_s = input_scaler_s
         self.input_scaler_a = input_scaler_a
         self.y_output_scaler = None

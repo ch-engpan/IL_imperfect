@@ -9,6 +9,12 @@ import gymnasium as gym
 from copy import deepcopy as cp
 from stable_baselines3.common.vec_env import SubprocVecEnv
 
+
+def categorical_cross_entropy_from_probs(probabilities, targets, eps=1e-8):
+    """Cross-entropy for normalized probabilities and one-hot or soft targets."""
+    log_probabilities = torch.log(probabilities.clamp_min(eps))
+    return -(targets * log_probabilities).sum(dim=-1).mean()
+
 def inverse_sigmoid(x):
     return torch.log(x / (1 - x))
 
@@ -48,8 +54,7 @@ class RL_Scoring():
         self.ce_loss = torch.nn.BCELoss(reduction='none')
         self.ce_loss.to(self.device)
 
-        self.ce_loss_mean = torch.nn.CrossEntropyLoss(reduction='mean')
-        self.ce_loss_mean.to(self.device)
+        self.ce_loss_mean = categorical_cross_entropy_from_probs
 
 
         self.s_max = torch.tensor(scaler_state.data_max_, dtype=torch.float32).to(self.device)

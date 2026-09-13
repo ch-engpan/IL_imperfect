@@ -12,6 +12,12 @@ from collections import deque
 import random
 # from utils_gail import ReplayBuffer
 
+
+def categorical_cross_entropy_from_probs(probabilities, targets, eps=1e-8):
+    """Cross-entropy for normalized probabilities and one-hot or soft targets."""
+    log_probabilities = torch.log(probabilities.clamp_min(eps))
+    return -(targets * log_probabilities).sum(dim=-1).mean()
+
 class ReplayBuffer:
     def __init__(self, max_size, state_shape, action_shape, device):
         # Initialize tensors to store states and actions
@@ -122,8 +128,7 @@ class RL_Scoring_selfLabel():
         self.loss_bce_mean = torch.nn.BCELoss()
         self.ce_loss.to(self.device)
 
-        self.ce_loss_mean = torch.nn.CrossEntropyLoss(reduction='mean')
-        self.ce_loss_mean.to(self.device)
+        self.ce_loss_mean = categorical_cross_entropy_from_probs
 
         self.s_max = torch.tensor(scaler_state.data_max_, dtype=torch.float32).to(self.device)
         self.s_min = torch.tensor(scaler_state.data_min_, dtype=torch.float32).to(self.device)
