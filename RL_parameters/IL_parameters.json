@@ -1,0 +1,48 @@
+{
+
+
+
+        "Ant": {
+            "scoring_model_pre_iters": 80
+
+        },
+
+        "HalfCheetah": {
+            "scoring_model_pre_iters": 150
+
+        },
+
+        "Hopper": {
+            "scoring_model_pre_iters": 150
+        },
+
+        "Swimmer": {
+            "scoring_model_pre_iters": 150
+
+        },
+
+        "Walker2d": {
+            "scoring_model_pre_iters": 150
+
+        },
+
+        "Lift": {
+            "scoring_model_pre_iters": 1000
+        },
+
+        "PickPlaceCan": {
+            "scoring_model_pre_iters": 1000
+        },
+
+        "NutAssemblySquare": {
+            "scoring_model_pre_iters": 1000
+        },
+
+        "TwoArmTransport": {
+            "scoring_model_pre_iters": 1000
+        }
+
+
+
+
+}

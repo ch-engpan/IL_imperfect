@@ -1,0 +1,197 @@
+{
+
+    "alpha_0.511111": {
+
+        "alpha_1": 0.3,
+        "alpha_2": 0.1,
+
+        "alpha_3": 0.4,
+        "alpha_4": 0.8,
+
+        "alpha_5": 0.45,
+        "alpha_6": 0.2,
+
+        "alpha_7": 0.9,
+        "alpha_8": 0.1
+
+    },
+
+
+
+        "alpha_0.5": {
+
+            "alpha_1": 0.8,
+            "alpha_2": 0.2,
+
+            "alpha_3": 0.6,
+            "alpha_4": 0.4,
+
+            "alpha_5": 0.7,
+            "alpha_6": 0.3,
+
+            "alpha_7": 0.9,
+            "alpha_8": 0.1
+
+        },
+
+        "alpha_1.0": {
+
+            "alpha_1": 1,
+            "alpha_2": 1,
+
+            "alpha_3": 1,
+            "alpha_4": 1,
+
+            "alpha_5": 1,
+            "alpha_6": 1,
+
+            "alpha_7": 1,
+            "alpha_8": 1
+
+        },
+
+
+        "alpha_0.75": {
+
+            "alpha_1": 0.8,
+            "alpha_2": 0.7,
+
+            "alpha_3": 0.9,
+            "alpha_4": 0.6,
+
+            "alpha_5": 0.85,
+            "alpha_6": 0.65,
+
+            "alpha_7": 0.95,
+            "alpha_8": 0.55
+
+        },
+
+
+
+        "alpha_0.8": {
+
+            "alpha_1": 0.85,
+            "alpha_2": 0.75,
+
+            "alpha_3": 0.9,
+            "alpha_4": 0.7,
+
+            "alpha_5": 0.95,
+            "alpha_6": 0.65
+
+        },
+
+        
+
+        "alpha_0.9": {
+
+            "alpha_1": 0.95,
+            "alpha_2": 0.85,
+
+            "alpha_3": 0.92,
+            "alpha_4": 0.88,
+
+            "alpha_5": 0.98,
+            "alpha_6": 0.82
+
+        },
+
+
+        "alpha_0.25": {
+
+            "alpha_1": 0.3,
+            "alpha_2": 0.2,
+
+            "alpha_3": 0.4,
+            "alpha_4": 0.1,
+
+            "alpha_5": 0.35,
+            "alpha_6": 0.15,
+
+            "alpha_7": 0.45,
+            "alpha_8": 0.05
+
+        },
+
+
+        "alpha_0.0": {
+
+            "alpha_1": 0,
+            "alpha_2": 0,
+
+            "alpha_3": 0,
+            "alpha_4": 0,
+
+            "alpha_5": 0,
+            "alpha_6": 0,
+
+            "alpha_7": 0,
+            "alpha_8": 0
+
+        },
+
+
+
+        "alpha_0.7": {
+
+            "alpha_1": 0.8,
+            "alpha_2": 0.6,
+
+            "alpha_3": 0.9,
+            "alpha_4": 0.5,
+
+            "alpha_5": 0.85,
+            "alpha_6": 0.55,
+
+            "alpha_7": 0.75,
+            "alpha_8": 0.65
+
+        },
+
+
+        "alpha_0.5_noisy_10%": {
+
+            "alpha_1": 0.72,
+            "alpha_2": 0.22,
+
+            "alpha_3": 0.66,
+            "alpha_4": 0.36,
+
+            "alpha_5": 0.77,
+            "alpha_6": 0.27
+        },
+
+
+
+        "alpha_0.5_noisy_20%": {
+
+            "alpha_1": 0.64,
+            "alpha_2": 0.24,
+
+            "alpha_3": 0.72,
+            "alpha_4": 0.32,
+
+            "alpha_5": 0.84,
+            "alpha_6": 0.24
+        },
+
+
+
+        "alpha_0.5_noisy_30%": {
+            
+            "alpha_1": 0.56,
+            "alpha_2": 0.26,
+
+            "alpha_3": 0.78,
+            "alpha_4": 0.28,
+
+            "alpha_5": 0.91,
+            "alpha_6": 0.21
+            }
+
+
+
+
+
+}

@@ -1,0 +1,69 @@
+{
+
+    "PPO": {
+
+        "BeamRiderNoFrameskip": {
+            "policy": "CnnPolicy",
+            "batch_size":256,
+            "clip_range": 0.1,
+            "ent_coef":0.01,
+            "frame_stack":4,
+            "learning_rate":2.5e-4,
+            "n_epochs":4,
+            "n_steps":128,
+            "normalize":"False",
+            "vf_coef":0.5
+        },
+        "PongNoFrameskip": {
+            "policy": "CnnPolicy",
+            "batch_size":256,
+            "clip_range": 0.1,
+            "ent_coef":0.01,
+            "frame_stack":4,
+            "learning_rate":2.5e-4,
+            "n_epochs":4,
+            "n_steps":128,
+            "normalize":"False",
+            "vf_coef":0.5
+        }
+
+
+
+    },
+   
+
+
+    "DQN": {
+        "BeamRiderNoFrameskip": {
+            "batch_size": 32,
+            "buffer_size": 10000,
+            "exploration_final_eps": 0.01,
+            "exploration_fraction": 0.1,
+            "frame_stack": 4,
+            "gradient_steps": 1,
+            "learning_rate": 0.0001,
+            "learning_starts": 100000,
+            "optimize_memory_usage": "True",
+            "policy": "CnnPolicy",
+            "target_update_interval": 1000,
+            "train_freq": 4
+        },
+
+        "PongNoFrameskip": {
+            "batch_size": 32,
+            "buffer_size": 10000,
+            "exploration_final_eps": 0.01,
+            "exploration_fraction": 0.1,
+            "frame_stack": 4,
+            "gradient_steps": 1,
+            "learning_rate": 0.0001,
+            "learning_starts": 100000,
+            "optimize_memory_usage": "True",
+            "policy": "CnnPolicy",
+            "target_update_interval": 1000,
+            "train_freq": 4
+        }
+
+
+    }
+}
